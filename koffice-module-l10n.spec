@@ -5,11 +5,11 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-i18n
 Version:	1.3.4
-Release:	7
+Release:	6
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{_name}-%{version}/src/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{_name}-%{version}/src/%{_name}-i18n-%{version}.tar.bz2
 # Source0-md5:	6455f496f6031e810398ad6b065eb929
 # Source0-size:	27798685
 URL:		http://i18n.kde.org/

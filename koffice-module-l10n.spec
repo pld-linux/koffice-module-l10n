@@ -5,6 +5,8 @@ Name:		%{_name}-i18n
 Version:	1.3.4
 Release:	1
 Epoch:		5
+Group:		X11/Applications
+License:	GPL
 Source1:	ftp://ftp.kde.org/pub/kde/stable/%{_name}-%{version}/src/%{name}-%{version}.tar.bz2
 # Source1-md5:	6455f496f6031e810398ad6b065eb929
 # Source1-size:	27798685
@@ -225,7 +227,7 @@ LDFLAGS="%{rpmldflags}"
 	kde_libs_htmldir="%{_kdedocdir}"
 
 %install
-rm -rf $RPM_BUILD_ROOT
+#rm -rf $RPM_BUILD_ROOT
 rm -rf *.lang
 
 ziew="example \
@@ -235,13 +237,8 @@ kdgantt \
 kexi \
 kformdesigner \
 kontour \
-kplato"
-
-for i in $ziew ;
-do 
-	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
-	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
-done
+kplato \
+krita"
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \

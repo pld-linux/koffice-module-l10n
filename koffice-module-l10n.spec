@@ -7,9 +7,9 @@ Release:	1
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
-Source1:	ftp://ftp.kde.org/pub/kde/stable/%{_name}-%{version}/src/%{name}-%{version}.tar.bz2
-# Source1-md5:	6455f496f6031e810398ad6b065eb929
-# Source1-size:	27798685
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{_name}-%{version}/src/%{name}-%{version}.tar.bz2
+# Source0-md5:	6455f496f6031e810398ad6b065eb929
+# Source0-size:	27798685
 URL:		http://i18n.kde.org/
 BuildRequires:	kdelibs >= %{kdelibs_epoch}:%{version}
 BuildRequires:	kdelibs-devel
@@ -211,6 +211,9 @@ Internationalization and localization files for kword.
 %description -n koffice-kword-i18n -l pl
 Pliki umiêdzynarodawiaj±ce dla kworda.
 
+%prep
+%setup -q
+
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
@@ -227,8 +230,14 @@ LDFLAGS="%{rpmldflags}"
 	kde_libs_htmldir="%{_kdedocdir}"
 
 %install
-#rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 rm -rf *.lang
+
+%{__make} -j1 install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir="%{_kdedocdir}" \
+	kde_libs_htmldir="%{_kdedocdir}"
+
 
 ziew="example \
 graphite \
@@ -239,11 +248,6 @@ kformdesigner \
 kontour \
 kplato \
 krita"
-
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	kde_htmldir="%{_kdedocdir}" \
-	kde_libs_htmldir="%{_kdedocdir}"
 
 for i in $ziew ;
 do 

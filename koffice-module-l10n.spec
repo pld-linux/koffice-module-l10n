@@ -233,6 +233,12 @@ rm -rf *.lang
 	kde_htmldir="%{_kdedocdir}" \
 	kde_libs_htmldir="%{_kdedocdir}"
 
+for i in $ziew ;
+do 
+	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
+	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
+done
+
 %find_lang kchart		--with-kde
 %find_lang kformula		--with-kde
 %find_lang kivio		--with-kde
@@ -271,7 +277,8 @@ cat kudesigner.lang >> karbon.lang
 
 kform="kformulalatexfilter \
 kformulamathmlfilter \
-kformulapngfilter"
+kformulapngfilter \
+kformulalib"
 
 for i in $kform;
 do
@@ -316,6 +323,12 @@ for i in $kword;
 do
 	%find_lang $i --with-kde
 	cat ${i}.lang >> kword.lang
+done
+
+for i in $RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/*.xml
+do 
+	z=`echo ${i}|sed -e "s|$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/||g" -e 's|\.xml||g'` 
+	echo "%lang(${z}) %{_datadir}/apps/koffice/autocorrect/${z}.xml" >> koffice.lang
 done
 
 %clean

@@ -250,7 +250,7 @@ kplato \
 krita"
 
 for i in $ziew ;
-do 
+do
 	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
 	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
 done
@@ -342,8 +342,8 @@ do
 done
 
 for i in $RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/*.xml
-do 
-	z=`echo ${i}|sed -e "s|$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/||g" -e 's|\.xml||g'` 
+do
+	z=`echo ${i}|sed -e "s|$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/||g" -e 's|\.xml||g'`
 	echo "%lang(${z}) %{_datadir}/apps/koffice/autocorrect/${z}.xml" >> koffice.lang
 done
 

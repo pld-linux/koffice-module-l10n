@@ -3,7 +3,7 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-i18n
 Version:	1.3.4
-Release:	1
+Release:	2
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
@@ -238,6 +238,8 @@ rm -rf *.lang
 	kde_htmldir="%{_kdedocdir}" \
 	kde_libs_htmldir="%{_kdedocdir}"
 
+# rename ven -> ve
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/ve{n,}
 
 ziew="example \
 graphite \

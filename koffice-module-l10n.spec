@@ -5,7 +5,7 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-i18n
 Version:	1.3.4
-Release:	4
+Release:	5
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
@@ -29,7 +29,7 @@ KOffice - wsparcie dla wielu jêzyków.
 Summary:	Internationalization and localization files for koffice-common
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla koffice-common
 Group:		X11/Applications
-Requires:	%{_name}-common = %{_koffice_epoch}:%{version}
+Requires:	%{_name}-common = %{koffice_epoch}:%{version}
 Requires:	kdebase-core-i18n
 Obsoletes:	koffice-i18n-base
 Obsoletes:	koffice-i18n-Afrikaans

@@ -3,9 +3,9 @@
 %define		kdelibs_epoch	9
 Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
-Name:		%{_name}-i18n
+Name:		%{_name}-module-i18n
 Version:	1.3.4
-Release:	5
+Release:	6
 Epoch:		5
 Group:		X11/Applications
 License:	GPL

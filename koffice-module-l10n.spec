@@ -228,6 +228,21 @@ LDFLAGS="%{rpmldflags}"
 rm -rf $RPM_BUILD_ROOT
 rm -rf *.lang
 
+ziew="example \
+graphite \
+kdatabase \
+kdgantt \
+kexi \
+kformdesigner \
+kontour \
+kplato"
+
+for i in $ziew ;
+do 
+	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
+	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
+done
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir="%{_kdedocdir}" \

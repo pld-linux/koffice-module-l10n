@@ -1,9 +1,11 @@
-%define		_name	koffice
+%define		_name		koffice
+%define		koffice_epoch	5
+%define		kdelibs_epoch	9
 Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-i18n
 Version:	1.3.4
-Release:	3
+Release:	4
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
@@ -27,7 +29,7 @@ KOffice - wsparcie dla wielu jêzyków.
 Summary:	Internationalization and localization files for koffice-common
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla koffice-common
 Group:		X11/Applications
-Requires:	%{_name}-common = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-common = %{_koffice_epoch}:%{version}
 Requires:	kdebase-core-i18n
 Obsoletes:	koffice-i18n-base
 Obsoletes:	koffice-i18n-Afrikaans
@@ -111,7 +113,7 @@ Pliki umiêdzynarodawiaj±ce dla koffice-common.
 Summary:	Internationalization and localization files for karbon
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla karbona
 Group:		X11/Applications
-Requires:	%{_name}-karbon = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-karbon = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-karbon-i18n
@@ -124,7 +126,7 @@ Pliki umiêdzynarodawiaj±ce dla karbon.
 Summary:	Internationalization and localization files for kchart
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kcharta
 Group:		X11/Applications
-Requires:	%{_name}-kchart = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kchart = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kchart-i18n
@@ -137,7 +139,7 @@ Pliki umiêdzynarodawiaj±ce dla kcharta.
 Summary:	Internationalization and localization files for kformula
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kformuli
 Group:		X11/Applications
-Requires:	%{_name}-kformula = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kformula = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kformula-i18n
@@ -150,7 +152,7 @@ Pliki umiêdzynarodawiaj±ce dla kformuli.
 Summary:	Internationalization and localization files for kivio
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kivio
 Group:		X11/Applications
-Requires:	%{_name}-kivio = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kivio = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kivio-i18n
@@ -163,7 +165,7 @@ Pliki umiêdzynarodawiaj±ce dla kivio.
 Summary:	Internationalization and localization files for kpresenter
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kpresentera
 Group:		X11/Applications
-Requires:	%{_name}-kpresenter = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kpresenter = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kpresenter-i18n
@@ -176,7 +178,7 @@ Pliki umiêdzynarodawiaj±ce dla kpresentera.
 Summary:	Internationalization and localization files for kspread
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kspreada
 Group:		X11/Applications
-Requires:	%{_name}-kspread = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kspread = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kspread-i18n
@@ -189,7 +191,7 @@ Pliki umiêdzynarodawiaj±ce dla kspreada.
 Summary:	Internationalization and localization files for kugar
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kugara
 Group:		X11/Applications
-Requires:	%{_name}-kugar = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kugar = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kugar-i18n
@@ -202,7 +204,7 @@ Pliki umiêdzynarodawiaj±ce dla kugara.
 Summary:	Internationalization and localization files for kword
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kworda
 Group:		X11/Applications
-Requires:	%{_name}-kword = %{epoch}:%{version}-%{release}
+Requires:	%{_name}-kword = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
 %description -n koffice-kword-i18n

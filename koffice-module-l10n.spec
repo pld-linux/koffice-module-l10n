@@ -5,7 +5,7 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-i18n
 Version:	1.3.4
-Release:	6
+Release:	7
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
@@ -214,7 +214,7 @@ Internationalization and localization files for kword.
 Pliki umiêdzynarodawiaj±ce dla kworda.
 
 %prep
-%setup -q
+%setup -q -n %{_name}-i18n
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir

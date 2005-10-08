@@ -1,16 +1,74 @@
+# TODO:
+# - missing obsoletes
+# - finish install and files
+
 %define		_name		koffice
 %define		koffice_epoch	5
 %define		kdelibs_epoch	9
 Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
-Name:		%{_name}-module-i18n
-Version:	1.3.5
-Release:	1
+Name:		%{_name}-module-l10n
+Version:	1.4.1
+Release:	0.1
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{_name}-%{version}/src/%{_name}-i18n-%{version}.tar.bz2
-# Source0-md5:	7a4af78be2a9e09a148717079f44a7a7
+Source0:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-bg-%{version}.tar.bz2
+# Source0-md5:  445f35bf43b60c7799df116bd90957ad
+Source1:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ca-%{version}.tar.bz2
+# Source1-md5:  f011aa527e4b476f18f1fda9a043f81b
+Source2:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-cs-%{version}.tar.bz2
+# Source2-md5:  8b56e381765bece8a32fec3b67e881c2
+Source3:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-cy-%{version}.tar.bz2
+# Source3-md5:  e15377d70faef67a91a361b421b8be84
+Source4:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-da-%{version}.tar.bz2
+# Source4-md5:  3bcda6ccf32a2b0916f5de47981be655
+Source5:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-de-%{version}.tar.bz2
+# Source5-md5:  b54a04db280a5b00f0105407c24ce49c
+Source6:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-el-%{version}.tar.bz2
+# Source6-md5:  a744de5d6e97a25257a809f7a0f79a11
+Source7:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-en_GB-%{version}.tar.bz2
+# Source7-md5:  deaaf836cce7efcd9c83d800a6b4e51b
+Source8:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-es-%{version}.tar.bz2
+# Source8-md5:  3872dfdfb6b12532218daf8f61f94282
+Source9:        ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-et-%{version}.tar.bz2
+# Source9-md5:  0ecd275357b76d245b2367a1925bda59
+Source10:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fi-%{version}.tar.bz2
+# Source10-md5: a2e26094907dc77365266c215183c587
+Source11:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fr-%{version}.tar.bz2
+# Source11-md5: 37a18640975a8a1ba38044a6ea7dbd37
+Source12:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-hu-%{version}.tar.bz2
+# Source12-md5: 95e046ab8097fda8b4f146b4a625b7a3
+Source13:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-it-%{version}.tar.bz2
+# Source13-md5: cac43b60ea3d01cfa0ac337bc0a296be
+Source14:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nb-%{version}.tar.bz2
+# Source14-md5: 0d9c12a3881861377130801a3a431dd2
+Source15:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nl-%{version}.tar.bz2
+# Source15-md5: a960e30b5bd883ed71ada339f238bb38
+Source16:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nn-%{version}.tar.bz2
+# Source16-md5: 7e55ada0f26bc0125ae26ab7c7b1eae2
+Source17:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pl-%{version}.tar.bz2
+# Source17-md5: c6c38ec4a42d2c2abd289b83e2398c21
+Source18:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pt-%{version}.tar.bz2
+# Source18-md5: af2c79e0694d913a749a9591598641c5
+Source19:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pt_BR-%{version}.tar.bz2
+# Source19-md5: 96f2a0ba7a249078e64ea319b8f27dc9
+Source20:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ru-%{version}.tar.bz2
+# Source20-md5: d198b6cc3574ea9305701a48324085bb
+Source21:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sl-%{version}.tar.bz2
+# Source21-md5: 3c27784f5630ca6f3b0cfbae89271176
+Source22:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sr-%{version}.tar.bz2
+# Source22-md5: f49d2141aa8bd2c68f0ab892cdc4e1a8
+Source23:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sr@Latn-%{version}.tar.bz2
+# Source23-md5: 41fecc81a0bfbce8eaf5f40e978be3fe
+Source24:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sv-%{version}.tar.bz2
+# Source24-md5: 58ffb4991e48caa73f434f30ca2b4761
+Source25:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ta-%{version}.tar.bz2
+# Source25-md5: 43e954db7f2af6f4c4f34a85a31e33d2
+Source26:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-tg-%{version}.tar.bz2
+# Source26-md5: 2e35a578c8afb853ef5c23e71c2d575e
+Source27:       ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-zh_CN-%{version}.tar.bz2
+# Source27-md5: 02491c50d888600dccd1685a9ef7ed6c
 URL:		http://i18n.kde.org/
 BuildRequires:	kdelibs >= %{kdelibs_epoch}:%{version}
 BuildRequires:	kdelibs-devel
@@ -214,7 +272,7 @@ Internationalization and localization files for kword.
 Pliki umiêdzynarodawiaj±ce dla kworda.
 
 %prep
-%setup -q -n %{_name}-i18n-%{version}
+%setup -q -c -T -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
@@ -223,25 +281,28 @@ kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
 LDFLAGS="%{rpmldflags}"
 #export UNSERMAKE=%{_datadir}/unsermake/unsermake
 
-%{__make} -f admin/Makefile.common cvs
-
-%configure
-%{__make} \
-	RPM_OPT_FLAGS="%{rpmcflags}" \
-	kde_htmldir="%{_kdedocdir}" \
-	kde_libs_htmldir="%{_kdedocdir}"
+for dir in koffice-l10n-*-%{version}; do
+	cd "$dir"
+	%configure
+	%{__make} \
+		RPM_OPT_FLAGS="%{rpmcflags}" \
+		kde_htmldir="%{_kdedocdir}" \
+		kde_libs_htmldir="%{_kdedocdir}"
+	cd ..
+done
 
 %install
 rm -rf $RPM_BUILD_ROOT
 rm -rf *.lang
 
-%{__make} -j1 install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	kde_htmldir="%{_kdedocdir}" \
-	kde_libs_htmldir="%{_kdedocdir}"
-
-# rename ven -> ve
-mv -f $RPM_BUILD_ROOT%{_datadir}/locale/ve{n,}
+for dir in koffice-l10n-*-%{version}; do
+	cd "$dir"
+	%{__make} -j1 install \
+		DESTDIR=$RPM_BUILD_ROOT \
+		kde_htmldir="%{_kdedocdir}" \
+		kde_libs_htmldir="%{_kdedocdir}"
+	cd ..
+done
 
 ziew="example \
 graphite \

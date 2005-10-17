@@ -9,7 +9,7 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-l10n
 Version:	1.4.2
-Release:	0.1
+Release:	1
 Epoch:		5
 Group:		X11/Applications
 License:	GPL

@@ -85,7 +85,7 @@ KOffice - international support.
 %description -l pl
 KOffice - wsparcie dla wielu jêzyków.
 
-%package -n koffice-common-i18n
+%package -n koffice-common-l10n
 Summary:	Internationalization and localization files for koffice-common
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla koffice-common
 Group:		X11/Applications
@@ -164,140 +164,140 @@ Obsoletes:	koffice-i18n-Simplified_Chinese
 Obsoletes:	koffice-i18n-Chinese
 Obsoletes:	koffice-i18n-Zulu
 
-%description -n koffice-common-i18n
+%description -n koffice-common-l10n
 Internationalization and localization files for koffice-common.
 
-%description -n koffice-common-i18n -l pl
+%description -n koffice-common-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla koffice-common.
 
-%package -n koffice-karbon-i18n
+%package -n koffice-karbon-l10n
 Summary:	Internationalization and localization files for karbon
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla karbona
 Group:		X11/Applications
 Requires:	%{_name}-karbon = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-karbon-i18n
+%description -n koffice-karbon-l10n
 Internationalization and localization files for karbon.
 
-%description -n koffice-karbon-i18n -l pl
+%description -n koffice-karbon-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla karbon.
 
-%package -n koffice-kchart-i18n
+%package -n koffice-kchart-l10n
 Summary:	Internationalization and localization files for kchart
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kcharta
 Group:		X11/Applications
 Requires:	%{_name}-kchart = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kchart-i18n
+%description -n koffice-kchart-l10n
 Internationalization and localization files for kchart.
 
-%description -n koffice-kchart-i18n -l pl
+%description -n koffice-kchart-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kcharta.
 
-%package -n koffice-kexi-i18n
+%package -n koffice-kexi-l10n
 Summary:	Internationalization and localization files for kexi
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kexi
 Group:		X11/Applications
 Requires:	%{_name}-kexi = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kexi-i18n
+%description -n koffice-kexi-l10n
 Internationalization and localization files for kexi.
 
-%description -n koffice-kexi-i18n -l pl
+%description -n koffice-kexi-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kexi.
 
-%package -n koffice-kformula-i18n
+%package -n koffice-kformula-l10n
 Summary:	Internationalization and localization files for kformula
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kformuli
 Group:		X11/Applications
 Requires:	%{_name}-kformula = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kformula-i18n
+%description -n koffice-kformula-l10n
 Internationalization and localization files for kformula.
 
-%description -n koffice-kformula-i18n -l pl
+%description -n koffice-kformula-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kformuli.
 
-%package -n koffice-kivio-i18n
+%package -n koffice-kivio-l10n
 Summary:	Internationalization and localization files for kivio
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kivio
 Group:		X11/Applications
 Requires:	%{_name}-kivio = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kivio-i18n
+%description -n koffice-kivio-l10n
 Internationalization and localization files for kivio.
 
-%description -n koffice-kivio-i18n -l pl
+%description -n koffice-kivio-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kivio.
 
-%package -n koffice-kpresenter-i18n
+%package -n koffice-kpresenter-l10n
 Summary:	Internationalization and localization files for kpresenter
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kpresentera
 Group:		X11/Applications
 Requires:	%{_name}-kpresenter = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kpresenter-i18n
+%description -n koffice-kpresenter-l10n
 Internationalization and localization files for kpresenter.
 
-%description -n koffice-kpresenter-i18n -l pl
+%description -n koffice-kpresenter-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kpresentera.
 
-%package -n koffice-krita-i18n
+%package -n koffice-krita-l10n
 Summary:	Internationalization and localization files for krita
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla krita
 Group:		X11/Applications
 Requires:	%{_name}-krita = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-krita-i18n
+%description -n koffice-krita-l10n
 Internationalization and localization files for krita.
 
-%description -n koffice-krita-i18n -l pl
+%description -n koffice-krita-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla krita.
 
-%package -n koffice-kspread-i18n
+%package -n koffice-kspread-l10n
 Summary:	Internationalization and localization files for kspread
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kspreada
 Group:		X11/Applications
 Requires:	%{_name}-kspread = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kspread-i18n
+%description -n koffice-kspread-l10n
 Internationalization and localization files for kspread.
 
-%description -n koffice-kspread-i18n -l pl
+%description -n koffice-kspread-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kspreada.
 
-%package -n koffice-kugar-i18n
+%package -n koffice-kugar-l10n
 Summary:	Internationalization and localization files for kugar
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kugara
 Group:		X11/Applications
 Requires:	%{_name}-kugar = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kugar-i18n
+%description -n koffice-kugar-l10n
 Internationalization and localization files for kugar.
 
-%description -n koffice-kugar-i18n -l pl
+%description -n koffice-kugar-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kugara.
 
-%package -n koffice-kword-i18n
+%package -n koffice-kword-l10n
 Summary:	Internationalization and localization files for kword
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla kworda
 Group:		X11/Applications
 Requires:	%{_name}-kword = %{koffice_epoch}:%{version}
 Requires:	%{_name}-common-i18n = %{epoch}:%{version}-%{release}
 
-%description -n koffice-kword-i18n
+%description -n koffice-kword-l10n
 Internationalization and localization files for kword.
 
-%description -n koffice-kword-i18n -l pl
+%description -n koffice-kword-l10n -l pl
 Pliki umiêdzynarodawiaj±ce dla kworda.
 
 %prep
@@ -410,25 +410,25 @@ done
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -n koffice-common-i18n	-f koffice.lang
+%files -n koffice-common-l10n	-f koffice.lang
 %defattr(644,root,root,755)
-%files -n koffice-karbon-i18n	-f karbon.lang
+%files -n koffice-karbon-l10n	-f karbon.lang
 %defattr(644,root,root,755)
-%files -n koffice-kchart-i18n	-f kchart.lang
+%files -n koffice-kchart-l10n	-f kchart.lang
 %defattr(644,root,root,755)
-%files -n koffice-kexi-i18n	-f kexi.lang
+%files -n koffice-kexi-l10n	-f kexi.lang
 %defattr(644,root,root,755)
-%files -n koffice-kformula-i18n	-f kformula.lang
+%files -n koffice-kformula-l10n	-f kformula.lang
 %defattr(644,root,root,755)
-%files -n koffice-kivio-i18n	-f kivio.lang
+%files -n koffice-kivio-l10n	-f kivio.lang
 %defattr(644,root,root,755)
-%files -n koffice-kpresenter-i18n	-f kpresenter.lang
+%files -n koffice-kpresenter-l10n	-f kpresenter.lang
 %defattr(644,root,root,755)
-%files -n koffice-krita-i18n	-f krita.lang
+%files -n koffice-krita-l10n	-f krita.lang
 %defattr(644,root,root,755)
-%files -n koffice-kspread-i18n	-f kspread.lang
+%files -n koffice-kspread-l10n	-f kspread.lang
 %defattr(644,root,root,755)
-%files -n koffice-kugar-i18n	-f kugar.lang
+%files -n koffice-kugar-l10n	-f kugar.lang
 %defattr(644,root,root,755)
-%files -n koffice-kword-i18n	-f kword.lang
+%files -n koffice-kword-l10n	-f kword.lang
 %defattr(644,root,root,755)

@@ -9,7 +9,7 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-l10n
 Version:	1.4.2
-Release:	2
+Release:	3
 Epoch:		5
 Group:		X11/Applications
 License:	GPL
@@ -90,7 +90,7 @@ Summary:	Internationalization and localization files for koffice-common
 Summary(pl):	Pliki umiêdzynarodawiaj±ce dla koffice-common
 Group:		X11/Applications
 Requires:	%{_name}-common = %{koffice_epoch}:%{version}
-Requires:	kdebase-core-l10n
+Requires:	kdebase-core-i18n
 Obsoletes:	koffice-i18n-base
 Obsoletes:	koffice-i18n-Afrikaans
 Obsoletes:	koffice-i18n-Arabic

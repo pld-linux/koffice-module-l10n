@@ -343,6 +343,13 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 			kde_libs_htmldir="%{_kdedocdir}"
 		cd ..
 	done
+
+	# remove zero-length file
+	find $RPM_BUILD_ROOT%{_kdedocdir} -size 0 -print0 | xargs -0 rm -vf
+
+	# remove empty language catalogs (= 1 message only)
+	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
+
 	touch installed.stamp
 fi
 

@@ -1,8 +1,5 @@
 # TODO:
-# - missing obsoletes
-# - finish install and files
-# - unpackaged files list: http://glen.alkohol.ee/pld/koffice-module-l10n.txt
-
+# - missing obsoletes -- which ones??
 %define		_name		koffice
 %define		koffice_epoch	5
 %define		kdelibs_epoch	9
@@ -365,7 +362,7 @@ kplato \
 
 for i in $ziew; do
 	rm -rf $(find $RPM_BUILD_ROOT -name "$i*.mo")
-	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
+	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/*/${i}
 done
 
 %find_lang karbon		--with-kde
@@ -394,9 +391,12 @@ plikez="\
 desktop_koffice \
 kfile_koffice \
 kfile_ooo \
+kfile_abiword \
+kfile_gnumeric \
 koconverter \
 kofficefilters \
 kounavail \
+koproperty \
 kscan_plugin \
 kscreenshot_plugin \
 "

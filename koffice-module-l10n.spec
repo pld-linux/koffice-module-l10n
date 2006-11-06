@@ -7,7 +7,7 @@ Summary:	Koffice per package i18n files
 Summary(pl):	T³umaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-l10n
 Version:	1.6.0
-Release:	0.1
+Release:	1
 Epoch:		5
 License:	GPL
 Group:		X11/Applications
@@ -370,21 +370,20 @@ done
 %find_lang kexi			--with-kde
 %find_lang kformula		--with-kde
 %find_lang kivio		--with-kde
-%find_lang koffice		--with-kde
-%find_lang koshell		--with-kde
-cat koshell.lang >> koffice.lang
 %find_lang kugar		--with-kde
-%find_lang kpresenter		--with-kde
+%find_lang kpresenter	--with-kde
 %find_lang krita		--with-kde
 %find_lang kspread		--with-kde
 %find_lang kword		--with-kde
-%find_lang thesaurus		--with-kde
+%find_lang thesaurus	--with-kde
 cat thesaurus.lang >> kword.lang
+rm -f thesaurus.lang
 
 kexi="kformdesigner"
 for i in $kexi; do
 	%find_lang $i --with-kde
-	cat ${i}.lang >> kexi.lang
+	cat $i.lang >> kexi.lang
+	rm -f $i.lang
 done
 
 plikez="\
@@ -399,11 +398,14 @@ kounavail \
 koproperty \
 kscan_plugin \
 kscreenshot_plugin \
+koffice	\
+koshell	\
 "
 
 for i in $plikez; do
 	%find_lang $i --with-kde
-	cat ${i}.lang >> koffice.lang
+	cat $i.lang >> common.lang
+	rm -f $i.lang
 done
 
 kspread="\
@@ -413,7 +415,8 @@ kspreadinsertcalendar \
 
 for i in $kspread; do
 	%find_lang $i --with-kde
-	cat ${i}.lang >> kspread.lang
+	cat $i.lang >> kspread.lang
+	rm -f $i.lang
 done
 
 kword="\
@@ -423,38 +426,66 @@ thesaurus_tool \
 
 for i in $kword; do
 	%find_lang $i --with-kde
-	cat ${i}.lang >> kword.lang
+	cat $i.lang >> kword.lang
+	rm -f $i.lang
 done
 
 for a in $RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/*.xml; do
 	t=${a##*autocorrect/}
 	lang=${t%.xml}
 	path=${a#$RPM_BUILD_ROOT}
-	echo "%lang($lang) $path" >> koffice.lang
+	echo "%lang($lang) $path" >> common.lang
 done
 
 %clean
+check_installed_files() {
+	errors=0
+	for a in *.lang; do
+		pkg=${a%%.lang}
+
+		rpmfile=%{_rpmdir}/%{_name}-$pkg-l10n-%{version}-%{release}.%{_target_cpu}.rpm
+		if [ ! -f $rpmfile ]; then
+			echo >&2 "Missing %%files section for $pkg"
+			errors=1
+		fi
+	done
+	if [ $errors -ne 0 ]; then
+		exit 1
+	fi
+}
+check_installed_files
+
 rm -rf $RPM_BUILD_ROOT
 
-%files -n koffice-common-l10n	-f koffice.lang
+%files -n koffice-common-l10n	-f common.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-karbon-l10n	-f karbon.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kchart-l10n	-f kchart.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kexi-l10n	-f kexi.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kformula-l10n	-f kformula.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kivio-l10n	-f kivio.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kpresenter-l10n	-f kpresenter.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-krita-l10n	-f krita.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kspread-l10n	-f kspread.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kugar-l10n	-f kugar.lang
 %defattr(644,root,root,755)
+
 %files -n koffice-kword-l10n	-f kword.lang
 %defattr(644,root,root,755)

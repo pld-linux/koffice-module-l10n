@@ -426,9 +426,11 @@ for i in $kword; do
 	cat ${i}.lang >> kword.lang
 done
 
-for i in $RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/*.xml; do
-	z=`echo ${i}|sed -e "s|$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/||g" -e 's|\.xml||g'`
-	echo "%lang(${z}) %{_datadir}/apps/koffice/autocorrect/${z}.xml" >> koffice.lang
+for a in $RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/*.xml; do
+	t=${a##*autocorrect/}
+	lang=${t%.xml}
+	path=${a#$RPM_BUILD_ROOT}
+	echo "%lang($lang) $path" >> koffice.lang
 done
 
 %clean

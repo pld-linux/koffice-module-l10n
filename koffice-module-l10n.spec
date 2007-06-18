@@ -1,5 +1,3 @@
-# TODO:
-# - missing obsoletes -- which ones??
 %define		_name		koffice
 %define		koffice_epoch	5
 %define		kdelibs_epoch	9
@@ -7,83 +5,89 @@ Summary:	Koffice per package i18n files
 Summary(pl.UTF-8):	Tłumaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-l10n
 Version:	1.6.3
-Release:	1
+Release:	2
 Epoch:		5
 License:	GPL
 Group:		X11/Applications
 URL:		http://i18n.kde.org/
-Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ca-%{version}.tar.bz2
-# Source0-md5:	5ec6aa3c1c613466a545e26bdb9dfd72
-Source1:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-cs-%{version}.tar.bz2
-# Source1-md5:	d893774830fa05b2450018ae70fcd267
-Source2:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-cy-%{version}.tar.bz2
-# Source2-md5:	6a100e050c3e6ae95733b24ce4d4f4cf
-Source3:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-da-%{version}.tar.bz2
-# Source3-md5:	fa9c878f7672d1b9881722f93a1dc1ce
-Source4:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-de-%{version}.tar.bz2
-# Source4-md5:	9153728550bc6101094bac42aefb7663
-Source5:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-el-%{version}.tar.bz2
-# Source5-md5:	be97b80ccaa0da028d8d04f263be5fed
-Source6:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-en_GB-%{version}.tar.bz2
-# Source6-md5:	468c3ac77b57de10e1cb7c99d184a443
-Source7:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-es-%{version}.tar.bz2
-# Source7-md5:	23f246f5bc86f8831e595f98c24c154e
-Source8:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-et-%{version}.tar.bz2
-# Source8-md5:	fdc1c81ae65bec5f7e56d76bcdbaa1af
-Source9:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-eu-%{version}.tar.bz2
-# Source9-md5:	3ca81163f7242bcad450342e1105ad89
-Source10:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fa-%{version}.tar.bz2
-# Source10-md5:	63f5d0570660e47455e8ccd1a8c4bf02
-Source11:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fi-%{version}.tar.bz2
-# Source11-md5:	98b3b306061c127b92d9e73d3641f687
-Source12:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fr-%{version}.tar.bz2
-# Source12-md5:	01219310196ac9c8325c3d8c7456bcb3
-Source13:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ga-%{version}.tar.bz2
-# Source13-md5:	80f28f345dbae9b108b97701ab2a3b7b
-Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-gl-%{version}.tar.bz2
-# Source14-md5:	84b9c65886a99599d99c7ea077875a88
-Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-hu-%{version}.tar.bz2
-# Source15-md5:	088e5c503a9dedfa8d23a3fa11f596ca
-Source16:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-it-%{version}.tar.bz2
-# Source16-md5:	1aa3d67279e63f7c7919908c686f2281
-Source17:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ja-%{version}.tar.bz2
-# Source17-md5:	b0d886c7504a8b0bafb5095835e78c8a
-Source18:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-km-%{version}.tar.bz2
-# Source18-md5:	527e698b2907f90712239681f0ae0a9e
-Source19:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-lv-%{version}.tar.bz2
-# Source19-md5:	62386e1713216bd2709e1ce3fd150c8e
-Source20:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ms-%{version}.tar.bz2
-# Source20-md5:	1bf2fcf2c82464e038eed026eaa13fca
-Source21:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nb-%{version}.tar.bz2
-# Source21-md5:	462ecb27a008482801ca3bd9e803b2d1
-Source22:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nl-%{version}.tar.bz2
-# Source22-md5:	a63c40510c0bb322dc1f6bb057759772
-Source23:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pl-%{version}.tar.bz2
-# Source23-md5:	a174b73f3e2c0e579bf3775e481958dd
-Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pt-%{version}.tar.bz2
-# Source24-md5:	e74540534eae3d0b1cb4bbabf3da0ed0
-Source25:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pt_BR-%{version}.tar.bz2
-# Source25-md5:	fe49fa2405b44044b69b5d1e2bcb15cf
-Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ru-%{version}.tar.bz2
-# Source26-md5:	e6be9bcea5e2b6e6aa4662f1530841ef
-Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sk-%{version}.tar.bz2
-# Source27-md5:	aa49a6c5497dc201359c577ab77c8361
-Source28:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sl-%{version}.tar.bz2
-# Source28-md5:	18e3f2e81be91170fe551e4b47c2f907
-Source29:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sr-%{version}.tar.bz2
-# Source29-md5:	3eb97f2ef5f65b3637af397dca0d8fcb
-Source30:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sr@Latn-%{version}.tar.bz2
-# Source30-md5:	217064c12d6efe969a1bbdac2ef8aef0
-Source31:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sv-%{version}.tar.bz2
-# Source31-md5:	c6c530010a64fb9e2880a3f33bb9276e
-Source32:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-tr-%{version}.tar.bz2
-# Source32-md5:	301f3a665f12d1b7f56fe9be93403812
-Source33:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-uk-%{version}.tar.bz2
-# Source33-md5:	f8a50375d4f280131a27e0bdfb0deb83
-Source34:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-zh_CN-%{version}.tar.bz2
-# Source34-md5:	a21490ebc1d0beedc565c070d4bdad25
-Source35:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-zh_TW-%{version}.tar.bz2
-# Source35-md5:	7c7c3787a45743ae9d06938829381d2e
+Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-bg-%{version}.tar.bz2
+# Source0-md5:	da3167fc536f51d8e32998ae203cd4b9
+Source1:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ca-%{version}.tar.bz2
+# Source1-md5:	5ec6aa3c1c613466a545e26bdb9dfd72
+Source2:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-cs-%{version}.tar.bz2
+# Source2-md5:	d893774830fa05b2450018ae70fcd267
+Source3:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-cy-%{version}.tar.bz2
+# Source3-md5:	6a100e050c3e6ae95733b24ce4d4f4cf
+Source4:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-da-%{version}.tar.bz2
+# Source4-md5:	fa9c878f7672d1b9881722f93a1dc1ce
+Source5:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-de-%{version}.tar.bz2
+# Source5-md5:	9153728550bc6101094bac42aefb7663
+Source6:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-el-%{version}.tar.bz2
+# Source6-md5:	be97b80ccaa0da028d8d04f263be5fed
+Source7:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-en_GB-%{version}.tar.bz2
+# Source7-md5:	468c3ac77b57de10e1cb7c99d184a443
+Source8:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-es-%{version}.tar.bz2
+# Source8-md5:	23f246f5bc86f8831e595f98c24c154e
+Source9:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-et-%{version}.tar.bz2
+# Source9-md5:	fdc1c81ae65bec5f7e56d76bcdbaa1af
+Source10:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-eu-%{version}.tar.bz2
+# Source10-md5:	3ca81163f7242bcad450342e1105ad89
+Source11:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fa-%{version}.tar.bz2
+# Source11-md5:	63f5d0570660e47455e8ccd1a8c4bf02
+Source12:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fi-%{version}.tar.bz2
+# Source12-md5:	98b3b306061c127b92d9e73d3641f687
+Source13:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-fr-%{version}.tar.bz2
+# Source13-md5:	01219310196ac9c8325c3d8c7456bcb3
+Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ga-%{version}.tar.bz2
+# Source14-md5:	80f28f345dbae9b108b97701ab2a3b7b
+Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-gl-%{version}.tar.bz2
+# Source15-md5:	84b9c65886a99599d99c7ea077875a88
+Source16:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-hu-%{version}.tar.bz2
+# Source16-md5:	088e5c503a9dedfa8d23a3fa11f596ca
+Source17:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-it-%{version}.tar.bz2
+# Source17-md5:	1aa3d67279e63f7c7919908c686f2281
+Source18:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ja-%{version}.tar.bz2
+# Source18-md5:	b0d886c7504a8b0bafb5095835e78c8a
+Source19:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-km-%{version}.tar.bz2
+# Source19-md5:	527e698b2907f90712239681f0ae0a9e
+Source20:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-lv-%{version}.tar.bz2
+# Source20-md5:	62386e1713216bd2709e1ce3fd150c8e
+Source21:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ms-%{version}.tar.bz2
+# Source21-md5:	1bf2fcf2c82464e038eed026eaa13fca
+Source22:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nb-%{version}.tar.bz2
+# Source22-md5:	462ecb27a008482801ca3bd9e803b2d1
+Source23:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nds-%{version}.tar.bz2
+# Source23-md5:	50702ef6c8d586e89280a2b42d2c5225
+Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ne-%{version}.tar.bz2
+# Source24-md5:	bd95494b15f647dfcbe39d514811504a
+Source25:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-nl-%{version}.tar.bz2
+# Source25-md5:	a63c40510c0bb322dc1f6bb057759772
+Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pl-%{version}.tar.bz2
+# Source26-md5:	a174b73f3e2c0e579bf3775e481958dd
+Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pt-%{version}.tar.bz2
+# Source27-md5:	e74540534eae3d0b1cb4bbabf3da0ed0
+Source28:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-pt_BR-%{version}.tar.bz2
+# Source28-md5:	fe49fa2405b44044b69b5d1e2bcb15cf
+Source29:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-ru-%{version}.tar.bz2
+# Source29-md5:	e6be9bcea5e2b6e6aa4662f1530841ef
+Source30:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sk-%{version}.tar.bz2
+# Source30-md5:	aa49a6c5497dc201359c577ab77c8361
+Source31:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sl-%{version}.tar.bz2
+# Source31-md5:	18e3f2e81be91170fe551e4b47c2f907
+Source32:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sr-%{version}.tar.bz2
+# Source32-md5:	3eb97f2ef5f65b3637af397dca0d8fcb
+Source33:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sr@Latn-%{version}.tar.bz2
+# Source33-md5:	217064c12d6efe969a1bbdac2ef8aef0
+Source34:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-sv-%{version}.tar.bz2
+# Source34-md5:	c6c530010a64fb9e2880a3f33bb9276e
+Source35:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-tr-%{version}.tar.bz2
+# Source35-md5:	301f3a665f12d1b7f56fe9be93403812
+Source36:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-uk-%{version}.tar.bz2
+# Source36-md5:	f8a50375d4f280131a27e0bdfb0deb83
+Source37:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-zh_CN-%{version}.tar.bz2
+# Source37-md5:	a21490ebc1d0beedc565c070d4bdad25
+Source38:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-zh_TW-%{version}.tar.bz2
+# Source38-md5:	7c7c3787a45743ae9d06938829381d2e
 BuildRequires:	kdelibs >= %{kdelibs_epoch}:%{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
@@ -103,8 +107,48 @@ Summary(pl.UTF-8):	Pliki umiędzynarodawiające dla koffice-common
 Group:		X11/Applications
 Requires:	%{_name}-common = %{koffice_epoch}:%{version}
 Requires:	kdebase-core-i18n
-Obsoletes:	koffice-i18n-base
-# and the languages
+# Hint:
+# grep ^%files koffice-l10n.spec | awk '{printf("Obsoletes:\tkoffice-l10n-%s\n", $NF)}' > out
+# obsolete pkgs from koffice-l10.spec
+Obsoletes:	koffice-l10n-Basque
+Obsoletes:	koffice-l10n-Brazil_Portuguese
+Obsoletes:	koffice-l10n-Bulgarian
+Obsoletes:	koffice-l10n-Catalan
+Obsoletes:	koffice-l10n-Chinese
+Obsoletes:	koffice-l10n-Cymraeg
+Obsoletes:	koffice-l10n-Czech
+Obsoletes:	koffice-l10n-Danish
+Obsoletes:	koffice-l10n-Dutch
+Obsoletes:	koffice-l10n-English_UK
+Obsoletes:	koffice-l10n-Estonian
+Obsoletes:	koffice-l10n-Farsi
+Obsoletes:	koffice-l10n-Finnish
+Obsoletes:	koffice-l10n-French
+Obsoletes:	koffice-l10n-Galician
+Obsoletes:	koffice-l10n-German
+Obsoletes:	koffice-l10n-Greek
+Obsoletes:	koffice-l10n-Hungarian
+Obsoletes:	koffice-l10n-Irish
+Obsoletes:	koffice-l10n-Italian
+Obsoletes:	koffice-l10n-Japanese
+Obsoletes:	koffice-l10n-Khmer
+Obsoletes:	koffice-l10n-Latvian
+Obsoletes:	koffice-l10n-Low_Saxon
+Obsoletes:	koffice-l10n-Malay
+Obsoletes:	koffice-l10n-Nepali
+Obsoletes:	koffice-l10n-Norwegian_Bokmaal
+Obsoletes:	koffice-l10n-Polish
+Obsoletes:	koffice-l10n-Portuguese
+Obsoletes:	koffice-l10n-Russian
+Obsoletes:	koffice-l10n-Serbian
+Obsoletes:	koffice-l10n-Simplified_Chinese
+Obsoletes:	koffice-l10n-Slovak
+Obsoletes:	koffice-l10n-Slovenian
+Obsoletes:	koffice-l10n-Spanish
+Obsoletes:	koffice-l10n-Swedish
+Obsoletes:	koffice-l10n-Turkish
+Obsoletes:	koffice-l10n-Ukrainian
+# obsolete pkgs when they were called i18n
 Obsoletes:	koffice-i18n-Afrikaans
 Obsoletes:	koffice-i18n-Arabic
 Obsoletes:	koffice-i18n-Azerbaijani
@@ -177,6 +221,7 @@ Obsoletes:	koffice-i18n-Vietnamese
 Obsoletes:	koffice-i18n-Walloon
 Obsoletes:	koffice-i18n-Xhosa
 Obsoletes:	koffice-i18n-Zulu
+Obsoletes:	koffice-i18n-base
 
 %description -n koffice-common-l10n
 Internationalization and localization files for koffice-common.
@@ -315,7 +360,7 @@ Internationalization and localization files for kword.
 Pliki umiędzynarodawiające dla kworda.
 
 %prep
-%setup -q -c -T %(seq -f '-a %g' 0 34 | xargs)
+%setup -q -c -T %(seq -f '-a %g' 0 38 | xargs)
 
 %build
 for dir in koffice-l10n-*-%{version}; do
@@ -352,7 +397,7 @@ fi
 
 rm -f *.lang
 
-ziew="\
+files="\
 example \
 graphite \
 kdatabase \
@@ -360,7 +405,7 @@ kdgantt \
 kplato \
 "
 
-for i in $ziew; do
+for i in $files; do
 	rm -rf $(find $RPM_BUILD_ROOT -name "$i*.mo")
 	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/*/${i}
 done
@@ -386,7 +431,7 @@ for i in $kexi; do
 	rm -f $i.lang
 done
 
-plikez="\
+files="\
 desktop_koffice \
 kfile_koffice \
 kfile_ooo \
@@ -402,7 +447,7 @@ koffice	\
 koshell	\
 "
 
-for i in $plikez; do
+for i in $files; do
 	%find_lang $i --with-kde
 	cat $i.lang >> common.lang
 	rm -f $i.lang

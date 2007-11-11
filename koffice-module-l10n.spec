@@ -5,7 +5,7 @@ Summary:	Koffice per package i18n files
 Summary(pl.UTF-8):	Tłumaczenia Koffice podzielone wg. pakietów
 Name:		%{_name}-module-l10n
 Version:	1.6.3
-Release:	2
+Release:	3
 Epoch:		5
 License:	GPL
 Group:		X11/Applications
@@ -88,6 +88,7 @@ Source37:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/k
 # Source37-md5:	a21490ebc1d0beedc565c070d4bdad25
 Source38:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/koffice-l10n-zh_TW-%{version}.tar.bz2
 # Source38-md5:	7c7c3787a45743ae9d06938829381d2e
+Patch0:		%{name}-locale-names.patch
 BuildRequires:	kdelibs >= %{kdelibs_epoch}:%{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
@@ -222,6 +223,8 @@ Obsoletes:	koffice-i18n-Walloon
 Obsoletes:	koffice-i18n-Xhosa
 Obsoletes:	koffice-i18n-Zulu
 Obsoletes:	koffice-i18n-base
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 
 %description -n koffice-common-l10n
 Internationalization and localization files for koffice-common.
@@ -361,6 +364,7 @@ Pliki umiędzynarodawiające dla kworda.
 
 %prep
 %setup -q -c -T %(seq -f '-a %g' 0 38 | xargs)
+%patch0 -p1
 
 %build
 for dir in koffice-l10n-*-%{version}; do

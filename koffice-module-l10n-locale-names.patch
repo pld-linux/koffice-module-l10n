@@ -1,0 +1,40 @@
+diff -urN 1/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.am 2/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.am
+--- 1/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.am	2007-05-30 23:24:29.000000000 +0200
++++ 2/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.am	2007-11-11 13:09:30.309071204 +0100
+@@ -1,3 +1,3 @@
+-KDE_LANG = sr@Latn
++KDE_LANG = sr@latin
+ SUBDIRS = $(AUTODIRS)
+ POFILES = AUTO
+diff -urN 1/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.in 2/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.in
+--- 1/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.in	2007-05-30 23:24:32.000000000 +0200
++++ 2/koffice-l10n-sr@Latn-1.6.3/messages/koffice/Makefile.in	2007-11-11 13:09:37.776110017 +0100
+@@ -178,7 +178,7 @@
+ xdg_appsdir = @xdg_appsdir@
+ xdg_directorydir = @xdg_directorydir@
+ xdg_menudir = @xdg_menudir@
+-KDE_LANG = sr@Latn
++KDE_LANG = sr@latin
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 1
+ SUBDIRS =.
+diff -urN 1/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.am 2/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.am
+--- 1/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.am	2007-05-30 23:24:29.000000000 +0200
++++ 2/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.am	2007-11-11 13:09:02.854369570 +0100
+@@ -1,3 +1,3 @@
+-KDE_LANG = sr@Latn
++KDE_LANG = sr@latin
+ SUBDIRS = $(AUTODIRS)
+ POFILES = AUTO
+diff -urN 1/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.in 2/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.in
+--- 1/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.in	2007-05-30 23:24:32.000000000 +0200
++++ 2/koffice-l10n-sr@Latn-1.6.3/messages/Makefile.in	2007-11-11 13:09:22.775362403 +0100
+@@ -176,7 +176,7 @@
+ xdg_appsdir = @xdg_appsdir@
+ xdg_directorydir = @xdg_directorydir@
+ xdg_menudir = @xdg_menudir@
+-KDE_LANG = sr@Latn
++KDE_LANG = sr@latin
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 1
+ SUBDIRS =. koffice
